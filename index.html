@@ -14,6 +14,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       min-height: 100vh;
       position: relative;
     }
@@ -33,7 +34,7 @@
       box-sizing: border-box;
       background: rgba(30,30,30,0.95);
       border-radius: 18px;
-      margin-top: 40px;
+      margin: 20px 0;
       box-shadow: 0 4px 24px rgba(0,0,0,0.2);
     }
     .logo {
@@ -56,8 +57,14 @@
       font-size: 1rem;
       margin: 0 0 8px 0;
       letter-spacing: 2px;
+      font-style: italic;
     }
     .desc {
+      text-align: center;
+      font-size: 1rem;
+      color: #bbb;
+    }
+    .desc2 {
       text-align: center;
       font-size: 1rem;
       color: #bbb;
@@ -91,10 +98,12 @@
       align-items: center;
       justify-content: center;
       font-size: 1.3rem;
+      object-fit: contain;
+      padding: 4px;
     }
     @media (max-width: 500px) {
       .container {
-        margin-top: 10vw;
+        margin: 10px 2vw;
         padding: 16px 4vw 32px 4vw;
         max-width: 98vw;
       }
@@ -110,22 +119,27 @@
     <h1>無敵風火輪</h1>
     <h2>RADICAL SPINZ</h2>
     <div class="desc">白天只是普通人，夜晚進行正義活動！</div>
+    <div class="desc2">来自北京，三人蒙面朋克乐队👊</div>
     <div class="links">
-      <a class="link-item" href="http://weibo.cn/qr/userinfo?featurecode=profile_qrcode&uid=6412253545" target="_blank">
-        <span class="link-icon" style="background:#e6162d;">微</span>
-        微博
+      <a class="link-item" href="weixin://dl/profile/MDPfBS5IxF9Iqcm7yM7HoZQ" target="_blank">
+        <img class="link-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/wechat.svg" alt="微信" style="filter: invert(1);" />
+        微信
       </a>
       <a class="link-item" href="bilibili://space/234953222" target="_blank">
-        <span class="link-icon" style="background:#00a1d6;">B</span>
+        <img class="link-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/bilibili.svg" alt="B站" style="filter: invert(1);" />
         B站
       </a>
       <a class="link-item" href="orpheus://user/29295730" target="_blank">
-        <span class="link-icon" style="background:#d43c33;">云</span>
+        <img class="link-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/neteasecloudmusic.svg" alt="网易云音乐" style="filter: invert(1);" />
         网易云音乐
       </a>
       <a class="link-item" href="qqmusic://userprofile?uid=29295730" target="_blank">
-        <span class="link-icon" style="background:#31c27c;">Q</span>
+        <img class="link-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/tencentqq.svg" alt="QQ音乐" style="filter: invert(1);" />
         QQ音乐
+      </a>
+      <a class="link-item" href="http://weibo.cn/qr/userinfo?featurecode=profile_qrcode&uid=6412253545" target="_blank">
+        <img class="link-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/sinaweibo.svg" alt="微博" style="filter: invert(1);" />
+        微博
       </a>
       <!-- 可继续添加其他平台 -->
     </div>
