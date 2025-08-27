@@ -14,7 +14,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: end;
       min-height: 100vh;
       position: relative;
     }
@@ -72,34 +72,40 @@
     }
     .links {
       display: flex;
-      flex-direction: column;
-      gap: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
     }
     .link-item {
       display: flex;
+      flex-direction: column;
       align-items: center;
       background: #232323;
       border-radius: 12px;
-      padding: 12px 16px;
+      padding: 12px 8px;
       text-decoration: none;
       color: #fff;
       transition: background 0.2s;
+      flex: 1;
+      min-width: 0;
+      text-align: center;
+      font-size: 0.85rem;
     }
     .link-item:hover {
       background: #333;
     }
     .link-icon {
-      width: 28px;
-      height: 28px;
-      margin-right: 14px;
-      border-radius: 6px;
+      width: 24px;
+      height: 24px;
+      margin-bottom: 8px;
+      border-radius: 4px;
       background: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.3rem;
+      font-size: 1rem;
       object-fit: contain;
-      padding: 4px;
+      padding: 3px;
     }
     @media (max-width: 500px) {
       .container {
@@ -121,17 +127,13 @@
     <div class="desc">白天只是普通人，夜晚進行正義活動！</div>
     <div class="desc2">来自北京，三人蒙面朋克乐队👊</div>
     <div class="links">
-      <a class="link-item" href="weixin://dl/profile/MDPfBS5IxF9Iqcm7yM7HoZQ" target="_blank">
-        <img class="link-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/wechat.svg" alt="微信" style="filter: invert(1);" />
-        微信
-      </a>
       <a class="link-item" href="bilibili://space/234953222" target="_blank">
         <img class="link-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/bilibili.svg" alt="B站" style="filter: invert(1);" />
         B站
       </a>
       <a class="link-item" href="orpheus://user/29295730" target="_blank">
         <img class="link-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/neteasecloudmusic.svg" alt="网易云音乐" style="filter: invert(1);" />
-        网易云音乐
+        网易云
       </a>
       <a class="link-item" href="qqmusic://userprofile?uid=29295730" target="_blank">
         <img class="link-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/tencentqq.svg" alt="QQ音乐" style="filter: invert(1);" />
